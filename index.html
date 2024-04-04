@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="data-app-version" content="4.0.0">
     <title>Anto</title>
-    <link rel="icon" href="assets/logo/toufukun.png">
+    <link rel="icon" href="assets/logo/duck.jpg">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,61 +16,82 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <!--CSS整理 https://purifycss.online -->
 </head>
 
 <body id="#">
     <header>
         <div class="logo wi-le-15">
-            <a href="#top"><img src="assets/logo/toufunoheya-head.png" alt="ロゴ"></a>
+            <a href="#top"><img src="assets/logo/anto-top.png" alt="ロゴ"></a>
         </div>
         <nav class="wi-ri-15">
             <ul>
                 <li><a href="#top" style="color: #3498db;" class="bold-text-lighter">トップ</a></li>
                 <li class="delete-mi"><a href="https://miya-kyu-gurupu.github.io/" class="bold-text-lighter" target="_blank">宮急</a></li>
-                <a class="hed-botoom" href="#feedback">フィードバック</a>
+                <a class="hed-bottom" href="#feedback">フィードバック</a>
             </ul>
         </nav>
     </header>
     <div>
-        <p class="toicon_le_wor Tilt_Warp">tofu's room</p>
-        <p style="font-size: 38px;" class="toicon_le_wor_sm Noto_Sans_JP">こんにちはとうふの部屋へ<br>ここでは最新情報を紹介します</p>
-        <img class="toicon" src="assets/logo/toufukun.png">
+        <p class="main_icon_le_wor Tilt_Warp">Anto</p>
+        <p style="font-size: 38px;" class="main_icon_le_wor_sm Noto_Sans_JP">はじめましてAnto(あんと)です!!<br>ここでは最新情報を紹介します!!</p>
+        <img class="main_icon" src="assets/logo/duck_cut.png">
     </div>
-    <div id="feedback" style="margin-top: 600px;" class="article-list wi-ri-15-list wi-le-15-list">
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSd1qEfZWoWwP8GR5VjOIcmJzMKWGrQZ3qe4zvUb7Z0tlh6I9g/formResponse" data-aos="zoom-in" data-aos-duration="1500">
-            <div class="input-field">
-                <input id="name" type="text" name="entry.1775131812" class="validate">
-                <label for="name">お名前</label>
-            </div>
-            <div class="input-field">
-                <input id="email" type="text" name="entry.1675552841" class="validate">
-                <label for="email">メールアドレス</label>
-            </div>
-            <div class="input-field">
-                <textarea id="message" name="entry.377106984" class="materialize-textarea"></textarea>
-                <label for="message">内容</label>
-            </div>
-            <button type="submit" name="button" class="btn blue-grey lighten-4 teal-text blue-grey-text waves-effect">送信</button>
-        </form>
-    </div>
+    <div style="margin-top: 800px;" class="article-list wi-ri-15-list wi-le-15-list"></div>
+    <!--問い合わせ-->
+    <contact>
+        <section class="contact page-section" id="contact">
+            <div class="contact container">
+                <div class="contact text-center">
+                    <h2 class="contact section-heading text-uppercase">問い合わせ</h2>
+                    <h3 class="contact section-subheading text-muted">すべて必須ではないので、返信不要であればメールアドレスなどは省いて頂いて構いません。</h3>
+                </div>
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSd1qEfZWoWwP8GR5VjOIcmJzMKWGrQZ3qe4zvUb7Z0tlh6I9g/formResponse" class="contact" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="contact row align-items-stretch mb-5">
+                        <div class="contact col-md-6">
+                            <div class="contact form-group">
+                                <!--お名前-->
+                                <input id="name" type="text" name="entry.1775131812" class="contact form-control" placeholder="お名前" data-sb-validations="required" />
+                                <div class="contact invalid-feedback" data-sb-feedback="name:required">お名前は必須になります。</div>
+                            </div>
+                            <div class="contact form-group">
+                                <!--メールアドレス-->
+                                <input id="email" type="email" name="entry.1675552841" class="contact form-control" placeholder="メールアドレス" data-sb-validations="required,email" />
+                                <div class="contact invalid-feedback" data-sb-feedback="email:required">メールアドレスは必須になります。</div>
+                                <div class="contact invalid-feedback" data-sb-feedback="email:email">メールの形式が無効です。</div>
+                            </div>
+                            <div class="contact form-group mb-md-0">
+                                <!--件名-->
+                                <input id="name" type="text" name="entry.307203222" class="contact form-control" placeholder="件名" data-sb-validations="required" />
+                                <div class="contact invalid-feedback" data-sb-feedback="phone:required">件名は必須になります。</div>
+                            </div>
+                        </div>
+                        <div class="contact col-md-6">
+                            <div class="contact form-group form-group-textarea mb-md-0">
+                                <!--内容-->
+                                <textarea id="message" name="entry.377106984" class="contact form-control" placeholder="内容" data-sb-validations="required"></textarea>
+                                <div class="contact invalid-feedback" data-sb-feedback="message:required">内容は必須になります。</div>
+                            </div>
+                        </div>
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center text-white mb-3">
+                                <button type="submit" name="button">送信</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center"><button type="submit" name="button" class="btn btn-primary btn-xl text-uppercase" id="submitButton">送信</button>
+                </form>
+        </section>
+    </contact>
     <footer class="" id="footer">
         <p class="footer-text bold-text-bolder">&copy;
             <script type="text/javascript">
                 var today = new Date();
                 var year = today.getFullYear();
                 document.write("2022-" + year);
-            </script> All rights reserved by tofu's room.
+            </script> All rights reserved by Anto.
         </p>
     </footer>
-    <script type="text/javascript">
-        if (screen.width <= 374) {
-            if (!localStorage['PageAccess']) {
-                location = "error/px-error.html";
-            }
-        } else {
-
-        }
-    </script>
     <script src="js/scripts.js"></script>
 </body>
 
