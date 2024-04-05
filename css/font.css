@@ -1,18 +1,13 @@
-/*@font-face {
+html,
+body {
+    font-family: 'MPLUS1Code-Regular';
+}
+
+@font-face {
     font-family: 'font_name';
     font-style: normal;
     font-weight: 400;
     src: url() format('woff');
-}
-
-.font_name {
-    font-family: 'font_name';
-}
-*/
-
-html,
-body {
-    font-family: 'font_name';
 }
 
 .Tilt_Warp {
@@ -21,4 +16,22 @@ body {
 
 .Noto_Sans_JP {
     font-family: 'Noto Sans JP',
+}
+
+@font-face {
+    font-family: "Hiragino-KakuGothic-W3";
+    src: url("/assets/font/ヒラギノ角ゴシック\ W3.woff2") format('woff2'), url("/assets/font/ヒラギノ角ゴシック\ W3.woff") format('woff');
+}
+
+.Hiragino-KakuGothic-W3 {
+    font-family: "Hiragino-KakuGothic-W3";
+}
+
+@font-face {
+    font-family: "MPLUS1Code-Regular";
+    src: url("/assets/font/MPLUS1Code-Regular.woff2") format('woff2'), url("/assets/font/MPLUS1Code-Regular.woff") format('woff');
+}
+
+.MPLUS1Code-Regular {
+    font-family: "MPLUS1Code-Regular";
 }
