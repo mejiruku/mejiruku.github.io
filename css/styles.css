@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "utf-8";
 html {
     scroll-behavior: smooth
 }
@@ -182,13 +182,13 @@ header nav ul li a:hover {
         transform-origin: center;
         margin: 0 auto;
         display: block;
-        width: 375px;
-        margin-top: 150px
+        width: 280px;
+        margin-top: 90px
     }
     .main_icon_le_wor {
         position: absolute;
         left: 50%;
-        top: 470px;
+        top: 400px;
         transform: translateX(-50%);
         font-size: 100px;
         text-align: center
@@ -196,7 +196,7 @@ header nav ul li a:hover {
     .main_icon_le_wor_sm {
         position: absolute;
         left: 50%;
-        top: 800px;
+        top: 600px;
         transform: translateX(-50%);
         font-size: 38px;
         text-align: center
