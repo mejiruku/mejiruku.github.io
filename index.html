@@ -38,51 +38,45 @@
         <img class="main_icon" src="assets/logo/duck_cut.png">
     </div>
     <div style="margin-top: 800px;" class="article-list wi-ri-15-list wi-le-15-list"></div>
-    <!--問い合わせ-->
-    <contact>
-        <section class="contact page-section" id="contact">
-            <div class="contact container">
-                <div class="contact text-center">
-                    <h2 class="contact section-heading text-uppercase">問い合わせ</h2>
-                    <h3 class="contact section-subheading text-muted">すべて必須ではないので、返信不要であればメールアドレスなどは省いて頂いて構いません。</h3>
-                </div>
-                <form action="https://docs.google.com/forms/d/e/1FAIpQLSd1qEfZWoWwP8GR5VjOIcmJzMKWGrQZ3qe4zvUb7Z0tlh6I9g/formResponse" class="contact" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <div class="contact row align-items-stretch mb-5">
-                        <div class="contact col-md-6">
-                            <div class="contact form-group">
-                                <!--お名前-->
-                                <input id="name" type="text" name="entry.1775131812" class="contact form-control" placeholder="お名前" data-sb-validations="required" />
-                                <div class="contact invalid-feedback" data-sb-feedback="name:required">お名前は必須になります。</div>
-                            </div>
-                            <div class="contact form-group">
-                                <!--メールアドレス-->
-                                <input id="email" type="email" name="entry.1675552841" class="contact form-control" placeholder="メールアドレス" data-sb-validations="required,email" />
-                                <div class="contact invalid-feedback" data-sb-feedback="email:required">メールアドレスは必須になります。</div>
-                                <div class="contact invalid-feedback" data-sb-feedback="email:email">メールの形式が無効です。</div>
-                            </div>
-                            <div class="contact form-group mb-md-0">
-                                <!--件名-->
-                                <input id="name" type="text" name="entry.307203222" class="contact form-control" placeholder="件名" data-sb-validations="required" />
-                                <div class="contact invalid-feedback" data-sb-feedback="phone:required">件名は必須になります。</div>
-                            </div>
+
+    <section class="contact page-section" id="contact">
+        <div class="contact container">
+            <div class="contact text-center">
+                <h2 class="contact section-heading text-uppercase">問い合わせ</h2>
+                <h3 class="contact section-subheading text-muted">すべて必須ではないので、返信不要であればメールアドレスなどは省いて頂いて構いません。</h3>
+            </div>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSd1qEfZWoWwP8GR5VjOIcmJzMKWGrQZ3qe4zvUb7Z0tlh6I9g/formResponse" class="contact" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class="contact row align-items-stretch mb-5">
+                    <div class="contact col-md-6">
+                        <div class="contact form-group">
+                            <input id="name" type="text" name="entry.1775131812" class="contact form-control" placeholder="お名前" data-sb-validations="required" />
+                            <div class="contact invalid-feedback" data-sb-feedback="name:required">お名前は必須になります。</div>
                         </div>
-                        <div class="contact col-md-6">
-                            <div class="contact form-group form-group-textarea mb-md-0">
-                                <!--内容-->
-                                <textarea id="message" name="entry.377106984" class="contact form-control" placeholder="内容" data-sb-validations="required"></textarea>
-                                <div class="contact invalid-feedback" data-sb-feedback="message:required">内容は必須になります。</div>
-                            </div>
+                        <div class="contact form-group">
+                            <input id="email" type="email" name="entry.1675552841" class="contact form-control" placeholder="メールアドレス" data-sb-validations="required,email" />
+                            <div class="contact invalid-feedback" data-sb-feedback="email:required">メールアドレスは必須になります。</div>
+                            <div class="contact invalid-feedback" data-sb-feedback="email:email">メールの形式が無効です。</div>
                         </div>
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center text-white mb-3">
-                                <button type="submit" name="button">送信</button>
-                            </div>
+                        <div class="contact form-group mb-md-0">
+                            <input id="subject" type="text" name="entry.307203222" class="contact form-control" placeholder="件名" data-sb-validations="required" />
+                            <div class="contact invalid-feedback" data-sb-feedback="phone:required">件名は必須になります。</div>
                         </div>
                     </div>
-                    <div class="text-center"><button type="submit" name="button" class="btn btn-primary btn-xl text-uppercase" id="submitButton">送信</button>
-                </form>
-        </section>
-    </contact>
+                    <div class="contact col-md-6">
+                        <div class="contact form-group form-group-textarea mb-md-0">
+                            <textarea id="message" name="entry.377106984" class="contact form-control" placeholder="内容" data-sb-validations="required"></textarea>
+                            <div class="contact invalid-feedback" data-sb-feedback="message:required">内容は必須になります。</div>
+                        </div>
+                    </div>
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <button type="submit" name="button">送信</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center"><button type="submit" name="button" class="btn btn-primary btn-xl text-uppercase" id="submitButton">送信</button>
+            </form>
+    </section>
     <footer class="" id="footer">
         <p class="footer-text bold-text-bolder">&copy;
             <script type="text/javascript">
