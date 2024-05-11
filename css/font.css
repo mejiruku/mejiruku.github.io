@@ -30,6 +30,9 @@ body {
 @font-face {
     font-family: "MPLUS1Code-Regular";
     src: url("/assets/font/MPLUS1Code-Regular.woff2") format('woff2'), url("/assets/font/MPLUS1Code-Regular.woff") format('woff');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
 }
 
 .MPLUS1Code-Regular {
