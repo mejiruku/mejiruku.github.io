@@ -201,6 +201,9 @@ header nav ul li a:hover {
         font-size: 38px;
         text-align: center
     }
+    .anto-bottom {
+        margin-top: 200px;
+    }
 }
 
 @media screen and (min-width:906px) {
@@ -220,7 +223,7 @@ header nav ul li a:hover {
         transform-origin: center;
         position: absolute;
         left: 35%;
-        top: 150px;
+        top: 240px;
         transform: translateX(-50%);
         font-size: 100px
     }
@@ -231,6 +234,9 @@ header nav ul li a:hover {
         left: 35%;
         top: 325px;
         transform: translateX(-50%)
+    }
+    .anto-bottom {
+        margin-top: 800px;
     }
 }
 
