@@ -1,0 +1,18 @@
+{
+    "name": "mejiruku",
+    "icons": [{
+            "src": "./assets/logo/duck_192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./assets/logo/duck_512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#FFFFFF",
+    "theme_color": "#96CDF3"
+}
